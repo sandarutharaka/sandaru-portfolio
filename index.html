@@ -8,8 +8,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skins/color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- style-switcher -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <!-- style-switcher -->
+    <link rel="stylesheet" href="css/style-switcher.css">
 </head>
-<body>
+<body >
     <!--main container start-->
     <div class="main-container">
         <!--aside start-->
@@ -21,18 +29,18 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#service"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
         </div>
         <!--aside start-->
         <!--main content start-->
         <div class="main-content">
             <!--home section start-->
-            <section class="home section ">
+            <section class="home active section " id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -40,7 +48,7 @@
                             <h3 class="my-profession">I'm a <span class="typing">Web Designer</span></h3>
                             <p>I am a passionate Website Developer, WordPress Developer, and Photographer. I create visually stunning designs, 
                                 build dynamic websites, and capture moments through my lens. Let's bring ideas to life!</p>
-                                <a href="#contact" class="btn hire me"> Hire Me</a>
+                                <a href="#" class="btn">Download CV</a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="img/Sandaru_Tharaka.jpg" alt="Sandaru Tharaka">  
@@ -50,7 +58,7 @@
             </section>
             <!--home section end-->
             <!--about section start-->
-            <section class="about section  ">
+            <section class="about section  " id="about">
                 <div class="container">
                     <div class="row">
                         <section class="section-title padd-15">
@@ -95,8 +103,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="#" class="btn">Download CV</a>
-                                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -143,7 +150,7 @@
                                                  <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i>2017 - 2020
+                                                            <i class="fa fa-calendar"></i> 2017 - 2020
                                                         </h3>
                                                         <h4 class="timeline-title">
                                                             A/l's
@@ -154,13 +161,13 @@
                                                  <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i>2022 - 2026
+                                                            <i class="fa fa-calendar"></i> 2022 - 2026
                                                         </h3>
                                                         <h4 class="timeline-title">
                                                             BSc(Hons)in Software Engineering
                                                         </h4>
                                                         <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aut incidunt deleniti cumque ut reprehenderit dolorem modi nostrum, recusandae unde debitis, magnam magni! Deserunt, excepturi ullam.</p>
-                                    
+                                                        
                                                  </div>
                                             </div>
                                         </div>
@@ -175,7 +182,7 @@
                                                  <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i>2017 - 2020
+                                                            <i class="fa fa-calendar"></i> 2017 - 2020
                                                         </h3>
                                                         <h4 class="timeline-title">
                                                             A/l's
@@ -186,7 +193,7 @@
                                                  <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i>2022 - 2026
+                                                            <i class="fa fa-calendar"></i> 2022 - 2026
                                                         </h3>
                                                         <h4 class="timeline-title">
                                                             BSc(Hons)in Software Engineering
@@ -205,7 +212,7 @@
             </section>
             <!-- about section end -->
             <!-- service section start -->
-             <section class="service section  ">
+             <section class="service section  " id="service">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -284,7 +291,7 @@
                 </div>
              </section>
             <!-- service section end -->
-            <section class="portfolio section ">
+            <section class="portfolio section " id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -355,7 +362,7 @@
             </section>
             <!-- portfolio section end -->
             <!-- contact section start -->
-            <section class="contact section">
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -440,8 +447,26 @@
         <!--main content end-->
     </div>
     <!--main container end-->
-
-
+    <!-- Style Switcher Start -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- Style Switcher end --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 </html>
