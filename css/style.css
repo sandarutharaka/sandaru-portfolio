@@ -674,14 +674,18 @@ h3.my-profession span
 }
 .portfolio-item .portfolio-item-inner .portfolio-img
 {
-   width: 300px;
-   height: 225px;
-    display: block;
-    height: 210px;
+     width: 100%;
+    display: flex;
+    align-items: center;
+    height: auto; 
+    overflow: hidden;
 }
 .portfolio-item .portfolio-item-inner .portfolio-img img{
-    width: 340px;
-    height: 220px;
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+    max-width: 340px; 
+    max-height: 220px; 
 }
 /* contact */
 .contact-title
