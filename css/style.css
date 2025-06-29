@@ -139,6 +139,7 @@ ul
     margin-left: -15px;
     margin-right: -15px;
     position: relative;
+    align-items: stretch;
 }
 .btn
 {
@@ -402,7 +403,7 @@ h3.my-profession span
 {
     color: var(--skin-color);
 }
-.about-text p
+.about-text p , .about-text ul
 {
     font-size: 16px;
     line-height: 25px;
@@ -667,25 +668,80 @@ h3.my-profession span
 }
 .portfolio-item .portfolio-item-inner
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--bg-black-100);
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
-    cursor: pointer;
+    transition: transform 0.3s ease;
+    min-height: 480px;
+}
+.portfolio-item-inner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
 }
 .portfolio-item .portfolio-item-inner .portfolio-img
 {
      width: 100%;
     display: flex;
     align-items: center;
-    height: auto; 
+    height: 200px; 
     overflow: hidden;
+    justify-content: center;
+    border-bottom: 1px solid var(--bg-black-50);
 }
+.portfolio-content {
+    padding: 15px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.portfolio-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-black-900);
+    margin-bottom: 10px;
+}
+
+.portfolio-desc {
+    font-size: 14px;
+    color: var(--text-black-700);
+    margin-bottom: 10px;
+}
+
+.portfolio-tools {
+    font-size: 13px;
+    color: var(--text-black-700);
+    margin-bottom: 15px;
+}
+.portfolio-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 10px 0;
+}
+
+
+.cm{
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 .portfolio-item .portfolio-item-inner .portfolio-img img{
     width: 100%; 
-    height: auto;
-    object-fit: cover; 
-    max-width: 340px; 
-    max-height: 220px; 
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+}
+.portfolio-item .portfolio-item-inner .portfolio-img:hover img {
+    transform: scale(1.05);
 }
 /* contact */
 .contact-title
@@ -852,3 +908,4 @@ h3.my-profession span
         max-width: 100%;
     }
 }
+
